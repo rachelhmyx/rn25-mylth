@@ -36,3 +36,51 @@
     transform: rotate(360deg);
   }
 }
+.text-green {
+  color: green;
+}
+
+/* Heading Style */
+.heading-text {
+  font-family: "Times New Roman", Times, serif;
+  background-color: #ccc;
+  padding: 20px 30px;
+  margin-bottom: 50px;
+}
+/* End of Heading Style */
+
+/* Content Style */
+.content {
+  display: grid;
+  grid-template-columns: 330px 600px 330px;
+  grid-template-rows: 1fr;
+  gap: 20px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.sub-content-1 p {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.sub-content-3 {
+  background-color: rgb(0, 119, 255);
+  padding: 10px 20px;
+}
+/* End of Content Style */
+
+/* Footer Style */
+footer {
+  margin-top: 50px;
+  height: 50px;
+  background-color: #ccc;
+}
+footer p {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 15px;
+}
+/* End of Footer Style */
+
+/* Responsive */
+/* End of Responsive */

@@ -153,3 +153,10 @@ git branch --show-current
 git remote add origin <remote repository URL>
 
 git branch -D …
+
+#Mylth1 Day-1:
+-git clone - clone repo trên git hub về máy local
+-git pull - 
+-steps git push code:
+-JSX:
+sử dụng className thay cho class trong HTML5
