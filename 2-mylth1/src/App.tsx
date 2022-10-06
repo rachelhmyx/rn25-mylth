@@ -26,16 +26,24 @@ function App() {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi nisi
             facilis est quasi officia in. Sint pariatur id distinctio autem!
           </p>
-          <img src={img} alt="" />
+          <img src={img} alt="" className="sub-content-img" />
         </div>
 
         <div className="sub-content-3">
-          <h1>What?</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <h1>Where?</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          <h1>Price?</h1>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          <div className="detail content-1">
+            <h1>What?</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div className="detail content-2">
+            <h1>Where?</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+          </div>
+
+          <div className="detail content-3">
+            <h1>Price?</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+          </div>
         </div>
       </div>
       {/* End of Content */}
