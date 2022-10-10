@@ -2,13 +2,13 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import img from "./images/traffic.jpg";
+import Header from "./components/Header"
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
       {/* Heading */}
-      <header>
-        <h1 className="heading-text">Pulpit Rock</h1>
-      </header>
+      <Header/>
       {/* End of Heading */}
 
       {/* Content */}
@@ -49,12 +49,7 @@ function App() {
       {/* End of Content */}
 
       {/* Footer */}
-      <footer>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eveniet
-          aspernatur quia obcaecati molestiae quisquam.
-        </p>
-      </footer>
+      <Footer/>
       {/* End of Footer */}
     </>
   );
