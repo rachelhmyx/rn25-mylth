@@ -1,56 +1,62 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import img from "./images/traffic.jpg";
-import Header from "./components/Header"
-import Footer from "./components/Footer";
+import img1 from "./images/1.jpg";
+import img2 from "./images/2.jpg";
+import img3 from "./images/3.jpg";
+import Content1 from "./homework/session02/1-basicUI/components/Content1";
+import Content2 from "./homework/session02/2-basicUI/components/Content2";
+import Content3 from "./homework/session02/3-basicUI/components/Content3";
+import ChartBar1 from "./homework/session02/4-practice/1-blockUI/components/ChartBar1";
+
 function App() {
   return (
     <>
-      {/* Heading */}
-      <Header/>
-      {/* End of Heading */}
+      {/* Basic UI - Compulsory Part*/}
 
-      {/* Content */}
-      <div className="content">
-        <div className="sub-content-1">
-          <p>The Drive</p>
-          <p>The Walk</p>
-          <p>The Return</p>
-          <p>The End</p>
-        </div>
-
-        <div className="sub-content-2">
-          <h1>The Walk</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi nisi
-            facilis est quasi officia in. Sint pariatur id distinctio autem!
-          </p>
-          <img src={img} alt="" className="sub-content-img" />
-        </div>
-
-        <div className="sub-content-3">
-          <div className="detail content-1">
-            <h1>What?</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      <div className="basicUI">
+        {/* Basic UI 1 */}
+        <div className="basicUI-1">
+          <div className="image-1">
+            <img src={img1} alt="" />
           </div>
-
-          <div className="detail content-2">
-            <h1>Where?</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-          </div>
-
-          <div className="detail content-3">
-            <h1>Price?</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
-          </div>
+          <Content1 />
         </div>
+        {/* End of Basic UI 1 */}
+
+        {/* Basic UI 2 */}
+        <div className="basicUI-2">
+          <div className="image-2">
+            <img src={img2} alt="" />
+          </div>
+          <Content2 />
+        </div>
+        {/* End of Basic UI 2 */}
+
+        {/* Basic UI 3 */}
+        <div className="basicUI-3">
+          <div className="image-3">
+            <img src={img3} alt="" />
+          </div>
+          <Content3 />
+        </div>
+        {/* End of Basic UI 3 */}
       </div>
-      {/* End of Content */}
 
-      {/* Footer */}
-      <Footer/>
-      {/* End of Footer */}
+      {/* End of Basic UI - Compulsory Part */}
+
+
+
+
+
+      {/* Practice Part */}
+
+      {/* 1-Block UI Chart Bar */}
+      
+
+      {/* End of 1-Block UI Chart bar */}
+
+      {/* End of Practice Part */}
     </>
   );
 }
