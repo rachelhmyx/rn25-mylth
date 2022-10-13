@@ -210,3 +210,9 @@ img {
 /* End of Basic UI 3 Style */
 
 /* End of Basic UI Style */
+
+/* Social Block */
+.block {
+  display: flex;
+}
+/* End of Social Block */

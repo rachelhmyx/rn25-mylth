@@ -10,6 +10,9 @@ import Content3 from "./homework/session02/3-basicUI/components/Content3";
 import ChartBar1 from "./homework/session02/4-practice/1-blockUI/components/ChartBar1";
 import Profile from "./homework/session02/4-practice/2-blockUI/components/Profile";
 
+import SocialBlock from "./homework/session02/4-practice/SocialBlock";
+import ChartColumn from "./homework/session02/4-practice/ChartColumn";
+
 function App() {
   let containerStyle = {
     height: "800px",
@@ -173,6 +176,47 @@ function App() {
       {/* End of Block UI - Profile Component */}
 
       {/* KẾT THÚC PHẦN LUYỆN TẬP */}
+
+      {/* Social Block */}
+      <div className="block">
+        <SocialBlock
+          color="#619BEC"
+          text="Facebook"
+          iconName=""
+          total={500000}
+          unit="Likes"
+        />
+        <SocialBlock
+          color="#31C8DD"
+          text="Twitter"
+          iconName=""
+          total={40000}
+          unit="Tweets"
+        />
+        <SocialBlock
+          color="#F78153"
+          text="Google +"
+          iconName=""
+          total={460000}
+          unit="Plus"
+        />
+        <SocialBlock
+          color="#F75354"
+          text="Pinterest"
+          iconName=""
+          total={34000}
+          unit="Pins"
+        />
+      </div>
+      {/* End of Social Block */}
+
+      {/* Chart Column */}
+      <div className="block">
+        <ChartColumn text="Today's Visitors" number={24599} />
+        <ChartColumn text="Yesterday's Visitors" number={15699} />
+        <ChartColumn text="Total Downloads" number={124599} />
+      </div>
+      {/* End of Chart Column */}
     </>
   );
 }
