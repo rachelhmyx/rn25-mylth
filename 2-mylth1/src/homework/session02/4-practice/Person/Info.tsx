@@ -1,8 +1,8 @@
 import React from "react";
 
 interface InfoProps {
-    personName ?: string;
-    jobTitle ?: string;
+  personName?: string;
+  jobTitle?: string;
 }
 
 function Info(props: InfoProps) {

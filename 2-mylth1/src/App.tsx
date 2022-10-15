@@ -14,10 +14,10 @@ import SocialBlock from "./homework/session02/4-practice/SocialBlock";
 import ChartColumn from "./homework/session02/4-practice/ChartColumn";
 import Person from "./homework/session02/4-practice/Person/Person";
 
-
 import ClassComponent from "./ComponentLifeCycle/ClassComponent";
 import CountNumber from "./ComponentLifeCycle/CountNumber";
 import ReactHook from "./StateinFunctionalComponent/FunctionalComponent";
+import Product from "./homework/session02/5-advanced/Product/Product";
 
 function App() {
   let containerStyle = {
@@ -226,15 +226,18 @@ function App() {
 
       {/* Person Block */}
       <div className="block">
-      <Person/>
-      
-
+        <Person />
       </div>
-      
-
       {/* End of Person Block */}
 
-      {/* KẾT THÚC PHẦN LUYỆN TẬP */}
+      {/* KẾT THÚC PHẦN LUYỆN TẬP CỦA SESSION 02 */}
+
+      {/* Phần Nâng cao của Session 02 */}
+      <div className="block">
+        <Product />
+      </div>
+
+      {/* Kết thúc phần Nâng cao của session 02 */}
 
       <ClassComponent text="Hello World" />
 

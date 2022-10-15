@@ -1,16 +1,18 @@
-import React from 'react'
+import React from "react";
 import "../Person/style.css";
 
-interface AvatarProps  {
-    imageLink ?: string;
+interface AvatarProps {
+  imageLink?: string;
 }
 
 function Avatar(props: AvatarProps) {
   return (
-    <><div className="avatar">
-    <img src={props.imageLink} alt="" />
-  </div></>
-  )
+    <>
+      <div className="avatar">
+        <img src={props.imageLink} alt="" />
+      </div>
+    </>
+  );
 }
 
-export default Avatar
+export default Avatar;
