@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.person-block {
+  margin: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 800px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.avatar img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+.info {
+  padding-top: 20px;
+  text-align: center;
+}
+.info h2 {
+  color: #656865;
+}
+.info p {
+  color: #656865;
+  font-size: 20px;
+}
+
+.detail-info {
+  width: 80%;
+  margin: 0 auto;
+}
+.detail-info tr {
+  border-bottom: 1px dotted #656865;
+}
+.detail-info th {
+  word-spacing: 5px;
+  color: #656865;
+}
+.detail-info th i {
+  margin-right: 5px;
+  color: #656865;
+}
+.detail-info td {
+  text-align: right;
+  color: #656865;
+}
+.contact-block .zone {
+  width: 250px;
+  height: 100px;
+  margin: 30px 15px;
+  padding: 15px;
+}
+
+.contact-block h5 {
+  text-transform: uppercase;
+  color: #fff;
+}
+.contact-block p {
+  color: #fff;
+}
+.contact-block p i {
+  margin-right: 10px;
+}

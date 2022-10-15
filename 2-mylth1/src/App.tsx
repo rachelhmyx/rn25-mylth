@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import img1 from "./images/1.jpg";
@@ -12,6 +12,12 @@ import Profile from "./homework/session02/4-practice/2-blockUI/components/Profil
 
 import SocialBlock from "./homework/session02/4-practice/SocialBlock";
 import ChartColumn from "./homework/session02/4-practice/ChartColumn";
+import Person from "./homework/session02/4-practice/Person/Person";
+
+
+import ClassComponent from "./ComponentLifeCycle/ClassComponent";
+import CountNumber from "./ComponentLifeCycle/CountNumber";
+import ReactHook from "./StateinFunctionalComponent/FunctionalComponent";
 
 function App() {
   let containerStyle = {
@@ -28,6 +34,8 @@ function App() {
 
   return (
     <>
+      <ReactHook />
+
       {/* Basic UI - Compulsory Part*/}
 
       <div className="basicUI">
@@ -175,35 +183,33 @@ function App() {
       </div>
       {/* End of Block UI - Profile Component */}
 
-      {/* KẾT THÚC PHẦN LUYỆN TẬP */}
-
       {/* Social Block */}
       <div className="block">
         <SocialBlock
           color="#619BEC"
           text="Facebook"
-          iconName=""
+          iconName="fab fa-facebook-f"
           total={500000}
           unit="Likes"
         />
         <SocialBlock
           color="#31C8DD"
           text="Twitter"
-          iconName=""
+          iconName="fab fa-twitter"
           total={40000}
           unit="Tweets"
         />
         <SocialBlock
           color="#F78153"
           text="Google +"
-          iconName=""
+          iconName="fab fa-google-plus-g"
           total={460000}
           unit="Plus"
         />
         <SocialBlock
           color="#F75354"
           text="Pinterest"
-          iconName=""
+          iconName="fab fa-pinterest"
           total={34000}
           unit="Pins"
         />
@@ -217,6 +223,22 @@ function App() {
         <ChartColumn text="Total Downloads" number={124599} />
       </div>
       {/* End of Chart Column */}
+
+      {/* Person Block */}
+      <div className="block">
+      <Person/>
+      
+
+      </div>
+      
+
+      {/* End of Person Block */}
+
+      {/* KẾT THÚC PHẦN LUYỆN TẬP */}
+
+      <ClassComponent text="Hello World" />
+
+      <CountNumber />
     </>
   );
 }

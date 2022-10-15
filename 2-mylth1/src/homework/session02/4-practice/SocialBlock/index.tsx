@@ -1,6 +1,5 @@
 import React from "react";
 import "../SocialBlock/style.css";
-import { FaFacebookF } from "react-icons/fa";
 
 interface SocialBlockProps {
   color?: string;
@@ -14,7 +13,7 @@ function SocialBlock(props: SocialBlockProps) {
   return (
     <>
       <div className="social-block" style={{ backgroundColor: props.color }}>
-        <FaFacebookF size={50} color="#fff" />
+        <i className={props.iconName}></i>
         <h1 className="social-name">{props.text}</h1>
         <p className="total">
           {props.total}
