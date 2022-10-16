@@ -1,0 +1,14 @@
+.like_btn {
+  display: block;
+  width: 100px;
+  height: 40px;
+  margin: 100px auto;
+  color: #fff;
+  font-weight: 700;
+  background-color: #f0003c;
+  border: none;
+  border-radius: 10px;
+}
+.like_btn i {
+  margin: 0px 5px;
+}

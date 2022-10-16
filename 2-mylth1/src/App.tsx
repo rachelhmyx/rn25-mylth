@@ -19,6 +19,7 @@ import CountNumber from "./ComponentLifeCycle/CountNumber";
 import ReactHook from "./StateinFunctionalComponent/FunctionalComponent";
 import Product from "./homework/session02/5-advanced/Product/Product";
 import SaleProduct from "./homework/session02/5-advanced/SaleProduct/SaleProduct";
+import LikeButton from "./homework/session03/LikeButton/LikeButton";
 
 function App() {
   let containerStyle = {
@@ -245,6 +246,10 @@ function App() {
       <ClassComponent text="Hello World" />
 
       <CountNumber />
+
+      {/* Session 03 */}
+      <LikeButton/>
+      {/* End of Session 03 */}
     </>
   );
 }
