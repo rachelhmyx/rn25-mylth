@@ -8,7 +8,7 @@ interface ProductPriceProps {
 function ProductPrice(props: ProductPriceProps) {
   return (
     <>
-      <p className="product-price">{props.productPrice}</p>
+      <p className="product_price">{props.productPrice}</p>
     </>
   );
 }

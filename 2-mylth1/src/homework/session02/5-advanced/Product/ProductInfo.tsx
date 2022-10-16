@@ -7,7 +7,7 @@ interface ProductInfoProps {
 function ProductInfo(props: ProductInfoProps) {
   return (
     <>
-      <div className="product-info">
+      <div className="product_info">
         <p>{props.productInfo}</p>
       </div>
     </>

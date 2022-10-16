@@ -6,7 +6,7 @@ interface ButtonAddProps {}
 function ButtonAdd(props: ButtonAddProps) {
   return (
     <>
-      <button className="add-to-cart-btn">
+      <button className="add_to_cart_btn">
         <i className="fas fa-shopping-cart"></i>Add to cart
       </button>
     </>

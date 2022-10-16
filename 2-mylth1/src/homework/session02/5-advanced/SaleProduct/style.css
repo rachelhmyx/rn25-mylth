@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  margin: 20px auto;
+  align-items: center;
+  border-bottom: 1px solid gray;
+}
+header h4 {
+  flex-basis: 20%;
+}
+header div {
+  flex-basis: 75%;
+}
+header div h6 {
+  margin: auto 0;
+  padding: 10px 0px;
+  width: 20%;
+  color: #fff;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  letter-spacing: 2px;
+  text-align: center;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0px 0px 14px -7px #f09819;
+}
+header div:hover h6 {
+  background-position: right center;
+}
+header div:active h6 {
+  transform: scale(0.95);
+}
+header a {
+  flex-basis: 5%;
+  border-bottom: 1px solid black;
+  padding: 3px 0px;
+  text-align: right;
+  text-decoration: none;
+  color: #333;
+  transition: all 1s ease;
+}
+header a:hover {
+  color: #f09819;
+  border-color: #f09819;
+}
+.product_list {
+  display: flex;
+  width: 1800px;
+}
+.product {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px;
+  width: 320px;
+  height: 580px;
+  padding: 15px 10px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.product::after {
+  content: "-30%";
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  left: 210px;
+  width: 80px;
+  height: 40px;
+  background-color: #f09819;
+}
+.image_product img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.shop_name {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  margin: 10px 0px;
+  border-bottom: 1px solid #8a8a8a;
+}
+.product_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
+.product_price h3 {
+  color: #8ba934;
+}
+.product_price del {
+  color: #8a8a8a;
+  font-size: 17px;
+}
+.product_price h5 {
+  color: red;
+}
+
+.product_name h5 {
+  color: #659fd6;
+}
+
+.rating_product i {
+  color: #f7ff07;
+  margin-right: 4px;
+}
+.progress {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.sold_number {
+  color: #8a8a8a;
+}

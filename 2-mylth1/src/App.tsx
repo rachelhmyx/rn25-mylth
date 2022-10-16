@@ -18,6 +18,7 @@ import ClassComponent from "./ComponentLifeCycle/ClassComponent";
 import CountNumber from "./ComponentLifeCycle/CountNumber";
 import ReactHook from "./StateinFunctionalComponent/FunctionalComponent";
 import Product from "./homework/session02/5-advanced/Product/Product";
+import SaleProduct from "./homework/session02/5-advanced/SaleProduct/SaleProduct";
 
 function App() {
   let containerStyle = {
@@ -236,6 +237,8 @@ function App() {
       <div className="block">
         <Product />
       </div>
+
+      <SaleProduct />
 
       {/* Kết thúc phần Nâng cao của session 02 */}
 

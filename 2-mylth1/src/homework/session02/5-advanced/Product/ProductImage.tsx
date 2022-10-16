@@ -8,7 +8,7 @@ interface ProductImageProps {
 function ProductImage(props: ProductImageProps) {
   return (
     <>
-      <div className="product-image">
+      <div className="product_image">
         <img src={props.imageLink} alt="" />
       </div>
     </>

@@ -8,7 +8,7 @@ interface ProductSizeProps {
 function ProductSize(props: ProductSizeProps) {
   return (
     <>
-      <div className="product-size">
+      <div className="product_size">
         <p>{props.productSize}</p>
       </div>
     </>

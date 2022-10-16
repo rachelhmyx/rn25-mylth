@@ -16,7 +16,7 @@ interface ProductProps {}
 function Product(props: ProductProps) {
   return (
     <>
-      <div className="product-block">
+      <div className="product_block">
         <ProductImage imageLink={dress} />
         <ProductName productName="Tea Length Dress" />
         <ProductInfo
@@ -27,7 +27,7 @@ function Product(props: ProductProps) {
         <ProductPrice productPrice="$25" />
         <ButtonAdd />
       </div>
-      <div className="product-block">
+      <div className="product_block">
         <ProductImage imageLink={bag} />
         <ProductName productName="Satchel" />
         <ProductInfo
@@ -38,7 +38,7 @@ function Product(props: ProductProps) {
         <ProductPrice productPrice="$25" />
         <ButtonAdd />
       </div>
-      <div className="product-block">
+      <div className="product_block">
         <ProductImage imageLink={shirt} />
         <ProductName productName="Raglan Sleeve" />
         <ProductInfo
@@ -49,7 +49,7 @@ function Product(props: ProductProps) {
         <ProductPrice productPrice="$25" />
         <ButtonAdd />
       </div>
-      <div className="product-block">
+      <div className="product_block">
         <ProductImage imageLink={jean} />
         <ProductName productName="Baggy Jean" />
         <ProductInfo
