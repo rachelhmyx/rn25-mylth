@@ -270,13 +270,14 @@ function App() {
       <ClassComponent text="Hello World" />
 
       <CountNumber />
+      <ReactHook/>
 
       {/* Session 03 */}
       <LikeButton/>
       <RateButton/>
       {/* End of Session 03 */}
 
-      <ReactHook/>
+      
     </>
   );
 }

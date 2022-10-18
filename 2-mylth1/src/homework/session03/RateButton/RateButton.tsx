@@ -1,18 +1,44 @@
-import React, { Component } from 'react'
+import React, { useState } from "react";
+
 import "../RateButton/style.css";
+import { FaStar } from "react-icons/fa";
 
-interface Props  {}
+interface Props {}
 
-interface State  {}
+function RateButton(props: Props) {
+  //Khai báo State:
+  const [rating, setRating] = useState(null);
+  const [hoverFill, setHoverFill] = useState(null);
 
-class RateButton extends Component<Props, State> {
-  state = {}
+  return (
+    <>
+      <div className="star">
+        {[...Array(5)].map((_, index) => {
+          const ratingValue = index + 1;
 
-  render() {
-    return (
-      <></>
-    )
-  }
+          return (
+            <button
+              key={index}
+              onMouseEnter={() => setHoverFill(ratingValue)}
+              onMouseLeave={() => setHoverFill(null)}
+              onClick={() => setRating(ratingValue)}
+            >
+              <FaStar
+                className="FaStar"
+                size={80}
+                style={{
+                  color:
+                    ratingValue <= (hoverFill || rating) ? "#ffe101" : "#ccc",
+                }}
+                onChange={() => setRating(ratingValue)}
+                value={ratingValue}
+              />
+            </button>
+          );
+        })}
+      </div>
+    </>
+  );
 }
 
-export default RateButton
+export default RateButton;
