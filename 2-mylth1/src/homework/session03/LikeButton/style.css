@@ -1,14 +1,16 @@
 .like_btn {
-  display: block;
   width: 100px;
-  height: 40px;
-  margin: 100px auto;
-  color: #fff;
-  font-weight: 700;
-  background-color: #f0003c;
+  height: 50px;
   border: none;
   border-radius: 10px;
+  display: block;
+  margin: 100px auto;
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+  font-size: 20px;
 }
 .like_btn i {
-  margin: 0px 5px;
+  margin-left: 10px;
+  font-size: 20px;
 }

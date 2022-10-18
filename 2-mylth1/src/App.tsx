@@ -20,8 +20,32 @@ import ReactHook from "./StateinFunctionalComponent/FunctionalComponent";
 import Product from "./homework/session02/5-advanced/Product/Product";
 import SaleProduct from "./homework/session02/5-advanced/SaleProduct/SaleProduct";
 import LikeButton from "./homework/session03/LikeButton/LikeButton";
+import RateButton from "./homework/session03/RateButton/RateButton";
 
 function App() {
+  //Mua xăng: 
+
+  //Case 1:b <= 2a -> mua 2 lít mua b
+  //3 2L: 1 1L: 15
+  //3: phan nguyen 7/2 ?? parseInt(7/2) * b
+  //1: 7 - (parseInt(7/2)*2) * a
+
+  //Case 2: b > 2a -> mua a
+  //N * a
+
+  //output: 3
+  //n=5
+  //1L: 1 đồng 
+  //2L : 1 đồng
+
+
+
+
+
+
+
+
+
   let containerStyle = {
     height: "800px",
     margin: "200px auto",
@@ -249,7 +273,10 @@ function App() {
 
       {/* Session 03 */}
       <LikeButton/>
+      <RateButton/>
       {/* End of Session 03 */}
+
+      <ReactHook/>
     </>
   );
 }

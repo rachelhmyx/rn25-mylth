@@ -1,34 +1,28 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "../LikeButton/style.css";
 
-interface Props {}
+interface LikeButtonProps {}
 
-interface State {
-  data: number;
-}
+function LikeButton(props: LikeButtonProps) {
+  //Khởi tạo state:
+  const [isLike, setIsLike] = useState(true);
 
-class LikeButton extends Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-
-    this.state = {
-      data: 0,
-    };
-  }
-  handleClick = () => {
-    this.setState({ data: this.state.data + 1 });
+  const handleOnClick = () => {
+    setIsLike(!isLike);
   };
 
-  render() {
-    return (
-      <>
-        <button className="like_btn" onClick={this.handleClick}>
-          {this.state.data}
-          <i className="fas fa-heart"></i> Like
-        </button>
-      </>
-    );
-  }
+  return (
+    <>
+      <button className="like_btn" onClick={handleOnClick}>
+        {isLike === true ? "unlike" : "like"}
+        <i
+          className={
+            isLike === true ? "fas fa-thumbs-down" : "fas fa-thumbs-up"
+          }
+        ></i>
+      </button>
+    </>
+  );
 }
 
 export default LikeButton;
