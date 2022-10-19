@@ -1,0 +1,14 @@
+#star_rating_btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 50px;
+  padding: 50px;
+}
+.on {
+  color: yellow;
+}
+.off {
+  color: #ccc;
+}

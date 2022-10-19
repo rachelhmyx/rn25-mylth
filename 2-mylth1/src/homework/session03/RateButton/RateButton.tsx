@@ -1,43 +1,29 @@
 import React, { useState } from "react";
-
 import "../RateButton/style.css";
-import { FaStar } from "react-icons/fa";
 
 interface Props {}
 
 function RateButton(props: Props) {
-  //Khai báo State:
-  const [rating, setRating] = useState(null);
-  const [hoverFill, setHoverFill] = useState(null);
+  //Khởi tạo state:
+  const [rating, setRating] = useState(0);
 
   return (
-    <>
-      <div className="star">
-        {[...Array(5)].map((_, index) => {
-          const ratingValue = index + 1;
-
-          return (
-            <button
-              key={index}
-              onMouseEnter={() => setHoverFill(ratingValue)}
-              onMouseLeave={() => setHoverFill(null)}
-              onClick={() => setRating(ratingValue)}
-            >
-              <FaStar
-                className="FaStar"
-                size={80}
-                style={{
-                  color:
-                    ratingValue <= (hoverFill || rating) ? "#ffe101" : "#ccc",
-                }}
-                onChange={() => setRating(ratingValue)}
-                value={ratingValue}
-              />
-            </button>
-          );
-        })}
-      </div>
-    </>
+    <div className="star_rating">
+      {[...Array(5)].map((star, index) => {
+        index += 1;
+        return (
+          <button
+            type="button"
+            key={index}
+            className={index <= rating ? "on" : "off"}
+            id="star_rating_btn"
+            onClick={() => setRating(index)}
+          >
+            <span className="star">&#9733;</span>
+          </button>
+        );
+      })}
+    </div>
   );
 }
 
