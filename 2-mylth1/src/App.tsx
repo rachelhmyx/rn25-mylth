@@ -20,7 +20,13 @@ import ReactHook from "./StateinFunctionalComponent/FunctionalComponent";
 import Product from "./homework/session02/5-advanced/Product/Product";
 import SaleProduct from "./homework/session02/5-advanced/SaleProduct/SaleProduct";
 import LikeButton from "./homework/session03/LikeButton/LikeButton";
-import RateButton from "./homework/session03/RateButton/RateButton";
+import LikeButtonClassComponent from "./homework/session03/LikeButton/LikeButton";
+import RateButtonForLoop from "./homework/session03/RateButton/RateButtonForLoop";
+import RateButtonClassComponent from "./homework/session03/RateButton/RateButtonClassComponent";
+import RateButtonFunctionalComponent from "./homework/session03/RateButton/RateButtonFunctionalComponent";
+
+
+
 
 function App() {
   //Mua xăng: 
@@ -60,7 +66,7 @@ function App() {
 
   return (
     <>
-      <ReactHook />
+      
 
       {/* Basic UI - Compulsory Part*/}
 
@@ -274,8 +280,16 @@ function App() {
 
       {/* Session 03 */}
       <LikeButton/>
-      <RateButton/>
+      <LikeButtonClassComponent/>
+
+      {/* <RateButton/> */}
+      <RateButtonForLoop/>
+      <RateButtonFunctionalComponent/><br></br>
+      <RateButtonClassComponent/>
+      
       {/* End of Session 03 */}
+
+      {/* <Form/> */}
 
       
     </>

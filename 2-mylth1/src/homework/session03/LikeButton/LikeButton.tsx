@@ -5,7 +5,7 @@ interface LikeButtonProps {}
 
 function LikeButton(props: LikeButtonProps) {
   //Khởi tạo state:
-  const [isLike, setIsLike] = useState(true);
+  const [isLike, setIsLike] = useState(false);
 
   const handleOnClick = () => {
     setIsLike(!isLike);
