@@ -1,21 +1,43 @@
-import React from 'react';
-import { Carousel } from '@sefailyasoz/react-carousel';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+import React from "react";
+import { useState } from "react";
+import "../ImageViewer/style.css";
 
+const maxImageIndex = 6;
 
-interface Props  {}
+function ImageViewer() {
+  const [imageIndex, setImageIndex] = useState(1);
 
-function ImageViewer(props: Props) {
-    const IamgeViewer = [
-        {
-            headerText: "Image 1",
-            subText: "About Image 1",
-            image: {img1},
-        }
-    ]
+  let imagePath = `/images/landscape${imageIndex}.jpg`;
+
   return (
-    <div>ImageViewer</div>
-  )
+    <>
+      <div className="image-container">
+        <img src={imagePath} alt="landscape_1" />
+
+        <div className="btn_container">
+          <button
+            disabled={imageIndex === 1}
+            className="btn_imageviewer"
+            onClick={() => {
+              setImageIndex(imageIndex - 1);
+            }}
+          >
+            Previous
+          </button>
+          <span>{imageIndex}/6</span>
+          <button
+            disabled={imageIndex === maxImageIndex}
+            className="btn_imageviewer"
+            onClick={() => {
+              setImageIndex(imageIndex + 1);
+            }}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    </>
+  );
 }
 
-export default ImageViewer
+export default ImageViewer;

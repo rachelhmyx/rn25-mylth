@@ -20,7 +20,7 @@ class RateButtonClassComponent extends Component<Props, State> {
     this.handleOnClick = this.handleOnClick.bind(this);
   }
   handleOnClick () {
-    this.setState({})
+    this.setState({star: this.state.star + 1})
   }
 
   render() {
@@ -29,9 +29,9 @@ class RateButtonClassComponent extends Component<Props, State> {
         {[...Array(5)].map((index) => {
           index += 1;
           return index < this.state.star ? (
-            <i className="fas fa-star on" onClick={()=> this.setState(index)}></i>
+            <i className="fas fa-star on" onClick={()=> this.setState}></i>
           ) : (
-            <i className="fas fa-star off" onClick={()=> this.setState(index)}></i>
+            <i className="fas fa-star off" onClick={()=> this.setState}></i>
           );
         })}
       </>

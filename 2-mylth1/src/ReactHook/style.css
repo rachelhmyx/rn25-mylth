@@ -1,0 +1,30 @@
+/* To do List Style */
+.todo_list {
+    width: 250px;
+    height: 300px;
+    border: 1px solid blue ;
+    margin: 30px 50px;
+    background-color: aqua;
+}
+.todo_list li {
+    cursor: pointer;
+}
+/* End of to do list style */
+
+/* Color box Style */
+.color_box {
+    width: 100px;
+    height: 100px;
+    margin: 50px auto;
+    cursor: pointer;
+}
+/* End of color box style */
+
+/* Color Box random style */
+.color_box_random {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    cursor: pointer;
+}
+/* End of color box style */

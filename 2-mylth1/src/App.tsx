@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import img1 from "./images/1.jpg";
 import img2 from "./images/2.jpg";
@@ -25,33 +24,15 @@ import RateButtonForLoop from "./homework/session03/RateButton/RateButtonForLoop
 import RateButtonClassComponent from "./homework/session03/RateButton/RateButtonClassComponent";
 import RateButtonFunctionalComponent from "./homework/session03/RateButton/RateButtonFunctionalComponent";
 
+import SimpleForm from "../src/Form/SimpleForm";
+import MultipleInputField from "../src/Form/MultipleInputField";
 
-
+import NetworkingExample from "./Networking/NetworkingExample";
+import ColorBox from "./ReactHook/1-useState/ColorBox";
+import ColorBoxRandom from "./ReactHook/1-useState/ColorBoxRandom";
+import ImageViewer from "./homework/session03/ImageViewer/ImageViewer";
 
 function App() {
-  //Mua xăng: 
-
-  //Case 1:b <= 2a -> mua 2 lít mua b
-  //3 2L: 1 1L: 15
-  //3: phan nguyen 7/2 ?? parseInt(7/2) * b
-  //1: 7 - (parseInt(7/2)*2) * a
-
-  //Case 2: b > 2a -> mua a
-  //N * a
-
-  //output: 3
-  //n=5
-  //1L: 1 đồng 
-  //2L : 1 đồng
-
-
-
-
-
-
-
-
-
   let containerStyle = {
     height: "800px",
     margin: "200px auto",
@@ -66,36 +47,34 @@ function App() {
 
   return (
     <>
-      
-
       {/* Basic UI - Compulsory Part*/}
 
       <div className="basicUI">
         {/* Basic UI 1 */}
-        <div className="basicUI-1">
+        {/* <div className="basicUI-1">
           <div className="image-1">
             <img src={img1} alt="" />
           </div>
           <Content1 />
-        </div>
+        </div> */}
         {/* End of Basic UI 1 */}
 
         {/* Basic UI 2 */}
-        <div className="basicUI-2">
+        {/* <div className="basicUI-2">
           <div className="image-2">
             <img src={img2} alt="" />
           </div>
           <Content2 />
-        </div>
+        </div> */}
         {/* End of Basic UI 2 */}
 
         {/* Basic UI 3 */}
-        <div className="basicUI-3">
+        {/* <div className="basicUI-3">
           <div className="image-3">
             <img src={img3} alt="" />
           </div>
           <Content3 />
-        </div>
+        </div> */}
         {/* End of Basic UI 3 */}
       </div>
 
@@ -104,7 +83,7 @@ function App() {
       {/* PHẦN LUYỆN TẬP */}
 
       {/* 1-Block UI Chart Bar */}
-      <div className="container" style={containerStyle}>
+      {/* <div className="container" style={containerStyle}>
         <div className="progress" style={progressStyle}>
           <ChartBar1
             text="Bandwidth"
@@ -172,11 +151,11 @@ function App() {
             segTwoWidth={310}
           />
         </div>
-      </div>
+      </div> */}
       {/* End of 1-Block UI Chart bar */}
 
       {/* Block UI - Profile Component */}
-      <div className="container" style={containerStyle}>
+      {/* <div className="container" style={containerStyle}>
         <Profile
           iconType="fab fa-android"
           bgIcon="#53D261"
@@ -212,11 +191,11 @@ function App() {
           bgInnerBar="#CD7CE3"
           widthInnerBar={300}
         />
-      </div>
+      </div> */}
       {/* End of Block UI - Profile Component */}
 
       {/* Social Block */}
-      <div className="block">
+      {/* <div className="block">
         <SocialBlock
           color="#619BEC"
           text="Facebook"
@@ -245,53 +224,65 @@ function App() {
           total={34000}
           unit="Pins"
         />
-      </div>
+      </div> */}
       {/* End of Social Block */}
 
       {/* Chart Column */}
-      <div className="block">
+      {/* <div className="block">
         <ChartColumn text="Today's Visitors" number={24599} />
         <ChartColumn text="Yesterday's Visitors" number={15699} />
         <ChartColumn text="Total Downloads" number={124599} />
-      </div>
+      </div> */}
       {/* End of Chart Column */}
 
       {/* Person Block */}
-      <div className="block">
+      {/* <div className="block">
         <Person />
-      </div>
+      </div> */}
       {/* End of Person Block */}
 
       {/* KẾT THÚC PHẦN LUYỆN TẬP CỦA SESSION 02 */}
 
       {/* Phần Nâng cao của Session 02 */}
-      <div className="block">
+      {/* <div className="block">
         <Product />
       </div>
 
-      <SaleProduct />
+      <SaleProduct /> */}
 
       {/* Kết thúc phần Nâng cao của session 02 */}
 
-      <ClassComponent text="Hello World" />
+      {/* <ClassComponent text="Hello World" />
 
       <CountNumber />
-      <ReactHook/>
+      <ReactHook /> */}
 
       {/* Session 03 */}
-      <LikeButton/>
-      <LikeButtonClassComponent/>
+      {/* <LikeButton />
+      <LikeButtonClassComponent /> */}
 
       {/* <RateButton/> */}
-      <RateButtonForLoop/>
-      <RateButtonFunctionalComponent/><br></br>
-      <RateButtonClassComponent/>
+      {/* <RateButtonForLoop />
+      <RateButtonFunctionalComponent />
+      <br></br>
+      <RateButtonClassComponent />
+
       
+
+      
+
       {/* End of Session 03 */}
 
-      {/* <Form/> */}
+      {/* <SimpleForm />
+      <MultipleInputField />  */}
 
-      
+      {/* <Form/> */}
+      {/* <NetworkingExample /> */}
+
+      {/* <ColorBox />
+      <ColorBoxRandom /> */}
+
+      <ImageViewer />
     </>
   );
 }
