@@ -1,0 +1,15 @@
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.icon_tab {
+    margin-right: 80px;
+}
+.content {
+    margin: 50px 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

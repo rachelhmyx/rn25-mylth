@@ -1,0 +1,21 @@
+/* Button Tab Style */
+tab_button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.tab_title {
+    width: 120px;
+    height: 48px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.tab_content {
+    color: gray;
+}
+/* End of Button Tab Style */
+

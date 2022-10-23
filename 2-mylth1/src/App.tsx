@@ -32,6 +32,12 @@ import ColorBox from "./ReactHook/1-useState/ColorBox";
 import ColorBoxRandom from "./ReactHook/1-useState/ColorBoxRandom";
 import ImageViewer from "./homework/session03/ImageViewer/ImageViewer";
 
+import ButtonTab from "./homework/session03/ButtonTabs/ButtonTabs";
+
+import IconTabs from "./homework/session03/IconTabs/Index";
+
+import TextTabs from "./homework/session03/TextTabs/Index";
+
 function App() {
   let containerStyle = {
     height: "800px",
@@ -282,7 +288,12 @@ function App() {
       {/* <ColorBox />
       <ColorBoxRandom /> */}
 
-      <ImageViewer />
+      {/* <ImageViewer /> */}
+
+      {/* <ButtonTab /> */}
+
+      {/* <IconTabs /> */}
+      <TextTabs />
     </>
   );
 }
