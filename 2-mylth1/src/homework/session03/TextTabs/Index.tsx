@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../TextTabs/style.css";
 
 const defaultTextTabs = [
@@ -25,7 +25,42 @@ const defaultTextTabs = [
 ];
 
 function TextTabs() {
-  return <></>;
+  const [selectedTextTab, setSelectedTextTab] = useState(0);
+  return (
+    <>
+      <div className="text_tab_title">
+        {defaultTextTabs.map((item, index) => {
+          const isActiveTextTab = index === selectedTextTab;
+          return (
+            <div
+              key={index}
+              onClick={() => {
+                setSelectedTextTab(index);
+              }}
+              className="title"
+              style={{ color: isActiveTextTab ? "#47B475" : "gray" }}
+            >
+              {item.title}
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="text_tab_content">
+        {defaultTextTabs.map((item, index) => {
+          if (index === selectedTextTab) {
+            return (
+              <div key={index} className="content">
+                {item.content}
+              </div>
+            );
+          } else {
+            return null;
+          }
+        })}
+      </div>
+    </>
+  );
 }
 
 export default TextTabs;

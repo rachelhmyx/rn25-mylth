@@ -1,0 +1,40 @@
+.vertical_tabs_container {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.vertical_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 30%;
+}
+
+.vertical_button button {
+    height: 60px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: gray;
+    transition: background-color 1s ease;
+}
+
+.vertical_button button:hover {
+    background-color: #ddd;
+}
+
+.vertical_content {
+    flex-basis: 70%;
+    margin-left: 50px;
+}
+
+.vertical_content h4 {
+    text-transform: uppercase;
+    color: gray;
+}
+
+.vertical_content div {
+    color: gray;
+}

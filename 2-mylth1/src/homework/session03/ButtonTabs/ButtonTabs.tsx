@@ -35,6 +35,7 @@ function ButtonTabs() {
           const isActiveTab = index === selectedTabIndex;
           return (
             <button
+              key={index}
               className="tab_title"
               style={{
                 backgroundColor: isActiveTab ? "#47B475" : "#bebebe",
@@ -53,7 +54,11 @@ function ButtonTabs() {
       <div className="tab_button_container">
         {defaultTabs.map((item, index) => {
           if (index === selectedTabIndex) {
-            return <div className="tab_content">{item.content}</div>;
+            return (
+              <div key={index} className="tab_content">
+                {item.content}
+              </div>
+            );
           } else {
             return null;
           }

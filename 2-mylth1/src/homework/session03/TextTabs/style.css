@@ -1,0 +1,23 @@
+.text_tab_title {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid gray;
+}
+.title {
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-right: 60px;
+    font-size: 20px;
+}
+.text_tab_content {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

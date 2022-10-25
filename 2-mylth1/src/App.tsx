@@ -37,6 +37,9 @@ import ButtonTab from "./homework/session03/ButtonTabs/ButtonTabs";
 import IconTabs from "./homework/session03/IconTabs/Index";
 
 import TextTabs from "./homework/session03/TextTabs/Index";
+import VerticalButtonTabs from "./homework/session03/VerticalButtonTabs/Index";
+import ButtonAccordions from "./homework/session03/Accordions/ButtonAccordions/Index";
+import ReactRoute from "./React Route/index";
 
 function App() {
   let containerStyle = {
@@ -293,7 +296,10 @@ function App() {
       {/* <ButtonTab /> */}
 
       {/* <IconTabs /> */}
-      <TextTabs />
+      {/* <TextTabs /> */}
+      {/* <VerticalButtonTabs /> */}
+      {/* <ButtonAccordions /> */}
+      <ReactRoute />
     </>
   );
 }

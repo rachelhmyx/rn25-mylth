@@ -38,6 +38,7 @@ function IconTabs() {
             const isActiveIcon = index === selectedIcon;
             return (
               <div
+                key={index}
                 className="icon_tab"
                 onClick={() => {
                   setSelectedIcon(index);
@@ -54,7 +55,7 @@ function IconTabs() {
         <div className="content">
           {defaultIconTab.map((item, index) => {
             if (index === selectedIcon) {
-              return <div>{item.content}</div>;
+              return <div key={index}>{item.content}</div>;
             } else {
               return null;
             }
