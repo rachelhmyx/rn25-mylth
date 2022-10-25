@@ -1,18 +1,19 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ListPage from "./pages/ListPage";
+import Form from "./pages/Form";
+import Detail from "./pages/Detail";
+import Navigation from "./pages/Navigation";
 
 function ReactRoute() {
   return (
     <BrowserRouter>
-      {/* Navigation */}
-      {/* <Link to={}>Home</Link> */}
+      <Navigation />
 
-      {/* End of Navigation */}
-
-      {/* route config */}
       <Routes>
-        <Route path="/home" element={<ListPage />} />
+        <Route path="/" element={<ListPage />} />
+        <Route path="/form" element={<Form />} />
+        <Route path="/detail/:id" element={<Detail />} />
         <Route
           path="*"
           element={
